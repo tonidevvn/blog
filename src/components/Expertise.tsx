@@ -17,19 +17,11 @@ const labelsFirst = [
   "Python",
   "SQL",
   "MongoDB",
-  "Postman",
 ];
 
-const labelsSecond = ["JUnit", "Python", "PyTest", "Selenium"];
+const labelsSecond = ["JUnit", "Python", "PyTest", "Selenium", "Postman"];
 
-const labelsThird = [
-  "Git",
-  "GitHub Actions",
-  "Docker",
-  "AWS",
-  "Azure",
-  "Linux",
-];
+const labelsThird = ["Git", "GitHub Actions", "Docker", "AWS", "Linux"];
 
 function Expertise() {
   return (
@@ -42,14 +34,15 @@ function Expertise() {
         </header>
         <div className="skills-grid">
           <div className="skill">
-            <div className="flex align-middle items-center mb-4">
+            <div className="flex align-middle items-center mb-4 cursor-pointer">
               <FontAwesomeIcon icon={faReact} size="3x" />
               <h3 className="ml-2 font-bold">Full Stack Web Development</h3>
             </div>
             <p>
-              I have built a diverse array of web applications from scratch
-              using modern technologies such as React and Nodejs. I have a
-              strong proficiency in the SDLC process and frontend + backend
+              I have developed a wide range of web applications from the ground
+              up, utilizing modern development frameworks like React, NextJs and
+              NodeJs. I possess strong proficiency in the Software Development
+              Life Cycle (SDLC) process, as well as in both frontend and backend
               development.
             </p>
             <div className="flex-chips">
@@ -61,7 +54,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <div className="flex align-middle items-center mb-4">
+            <div className="flex align-middle items-center mb-4 cursor-pointer">
               <FontAwesomeIcon icon={faCogs} size="3x" />
               <h3 className="ml-2 font-bold">Automation & Testing</h3>
             </div>
@@ -81,7 +74,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <div className="flex align-middle items-center mb-4">
+            <div className="flex align-middle items-center mb-4 cursor-pointer">
               <FontAwesomeIcon icon={faDocker} size="3x" />
               <h3 className="ml-2 font-bold">DevOps & Deployment</h3>
             </div>

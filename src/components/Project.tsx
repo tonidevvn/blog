@@ -11,7 +11,7 @@ function Project() {
     <div className="projects-container" id="projects">
       <header className="flex flex-col items-center text-center">
         <h2 className="font-bold text-5xl mb-12 text-transform: uppercase after:mx-auto after:mb-0 after:block after:mt-9 after:rounded-full after:h-1 after:w-24 after:-translate-y-1 after:bg-indigo-600 after:content-['']">
-          Personal Projects
+          Technical Projects
         </h2>
       </header>
       <div className="projects-grid">

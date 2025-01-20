@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Main.scss";
@@ -6,8 +6,21 @@ import Avatar from "../assets/images/toni-photo.jpg";
 import { scrollToSection } from "../utils";
 
 function Main() {
+  const [scrollTopVisible, setScrollTopVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setScrollTopVisible(true);
+    } else if (scrolled <= 300) {
+      setScrollTopVisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+
   return (
-    <div className="container">
+    <div id="main" className="container">
       <div className="about-section">
         <div className="image-wrapper">
           <img src={Avatar} alt="Avatar" />
@@ -76,6 +89,30 @@ function Main() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="fixed bottom-5 right-5 z-10">
+        <button
+          aria-label="scroll to top"
+          type="button"
+          onClick={() => scrollToSection("main")}
+          className={`${
+            scrollTopVisible ? "opacity-100" : "opacity-0"
+          } opacity-100 border-2 border-indigo-600 bg-indigo-600 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-all hover:bg-transparent duration-300`}
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            className="h-6 w-6"
+            aria-hidden="true"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M6 18h12v2H6zm6-14.414-6.707 6.707 1.414 1.414L11 7.414V16h2V7.414l4.293 4.293 1.414-1.414z"></path>
+          </svg>
+        </button>
       </div>
     </div>
   );
