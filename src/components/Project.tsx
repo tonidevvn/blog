@@ -55,14 +55,12 @@ function Project() {
                       </a>
                     </div>
                     <div className="mr-3">
-                      <a
-                        href="#"
+                      <button
                         className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
                         rel="noreferrer"
                       >
                         <span>Live</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -163,14 +161,12 @@ function Project() {
                       </a>
                     </div>
                     <div className="mr-3">
-                      <a
-                        href="#"
+                      <button
                         className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
                         rel="noreferrer"
                       >
                         <span>Live</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>

@@ -86,7 +86,7 @@ function About() {
               <div className="w-full lg:w-4/12 flex items-center justify-center">
                 <div className="w-2/3 flex justify-center mb-16">
                   <div className="profile_img">
-                    <img src={Photo} alt="Photo" className="rounded-md" />
+                    <img src={Photo} alt="about me" className="rounded-md" />
                   </div>
                 </div>
               </div>
