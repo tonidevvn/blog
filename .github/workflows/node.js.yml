@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: action checkout
-    - uses: actions/checkout@v4
+    - name: Action checkout
+      uses: actions/checkout@v4
     
-    - name: install Node.js ${{ matrix.node-version }}
+    - name: Install Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
