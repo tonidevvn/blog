@@ -98,7 +98,7 @@ function Main() {
           onClick={() => scrollToSection("main")}
           className={`${
             scrollTopVisible ? "opacity-100" : "opacity-0"
-          } opacity-100 border-2 border-indigo-600 bg-indigo-600 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-all hover:bg-transparent duration-300`}
+          } border-2 border-indigo-600 bg-indigo-600 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-all hover:bg-transparent duration-300`}
         >
           <svg
             stroke="currentColor"
