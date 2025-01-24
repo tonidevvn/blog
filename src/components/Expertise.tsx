@@ -6,7 +6,19 @@ import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 import { faCogs } from "@fortawesome/free-solid-svg-icons";
 
-const labelsFirst = [
+const labelsSW = [
+  "C",
+  "C++",
+  "C#",
+  "Java",
+  "Python",
+  "Visual Studio",
+  "WindowForm",
+  "WPF",
+  "VB.NET",
+];
+
+const labelsWeb = [
   "React",
   "Nextjs",
   "JavaScript",
@@ -19,9 +31,9 @@ const labelsFirst = [
   "MongoDB",
 ];
 
-const labelsSecond = ["JUnit", "Python", "PyTest", "Selenium", "Postman"];
+const labelsTest = ["JUnit", "Python", "PyTest", "Selenium", "Postman"];
 
-const labelsThird = ["Git", "GitHub Actions", "Docker", "AWS", "Linux"];
+const labelsDevOp = ["Git", "GitHub Actions", "Docker", "AWS", "Linux"];
 
 function Expertise() {
   return (
@@ -39,15 +51,33 @@ function Expertise() {
               <h3 className="ml-2 font-bold">Full Stack Web Development</h3>
             </div>
             <p>
-              I have developed a wide range of web applications from the ground
-              up, utilizing modern development frameworks like React, NextJs and
-              NodeJs. I possess strong proficiency in the Software Development
-              Life Cycle (SDLC) process, as well as in both frontend and backend
-              development.
+              Proficient in frontend and backend development React, Next.js,
+              Django, and Node.js, with expertise in data management, including
+              database design, integration, and accuracy for scalable, efficient
+              applications.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {labelsFirst.map((label, index) => (
+              {labelsWeb.map((label, index) => (
+                <Chip key={index} className="chip" label={label} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <div className="flex align-middle items-center mb-4 cursor-pointer">
+              <FontAwesomeIcon icon={faReact} size="3x" />
+              <h3 className="ml-2 font-bold">Software Engineer</h3>
+            </div>
+            <p>
+              With expertise in C++, C#, Java, and Python, I have worked
+              extensively on automotive-grade frameworks, adhering to industry
+              standards like AUTOSAR and ISO 26262. Proficient in the Software
+              Development Life Cycle (SDLC).
+            </p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {labelsSW.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
@@ -62,12 +92,11 @@ function Expertise() {
               Automate and enhance testing processes automatically with
               Selenium. I have professional experience designing robust,
               enterprise-grade automation frameworks to ensure seamless web
-              application functionality, reliability, and performance,
-              empowering teams to deliver quality-driven solutions efficiently.
+              application functionality, reliability, and performance.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {labelsSecond.map((label, index) => (
+              {labelsTest.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
@@ -85,7 +114,7 @@ function Expertise() {
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
-              {labelsThird.map((label, index) => (
+              {labelsDevOp.map((label, index) => (
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>

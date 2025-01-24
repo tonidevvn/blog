@@ -51,7 +51,7 @@ function Timeline() {
               HCMC, Vietnam
             </h4>
             <p>
-              Project planning, Frontend Development, Backend Development, User
+              Project Planning, Frontend Development, Backend Development, User
               Experience, Team Leading, Automation, Data Governance, Statistical
               Analysis
             </p>
@@ -69,8 +69,8 @@ function Timeline() {
               HCMC, Vietnam
             </h4>
             <p>
-              Project management, Requirement Analysis, Customer Support, Team
-              Leading
+              Project Management, Risk Monitoring, Requirement Analysis,
+              Customer Support, Team Leading
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -98,9 +98,23 @@ function Timeline() {
               HCMC, Vietnam
             </h4>
             <p>
-              Software Engineer, Software Tester, Frontend Development, Backend
-              Development, User Experience
+              Software Development, Software Testing, Frontend Development,
+              Backend Development, User Experience
             </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2011 - 2020"
+            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Web Developer at DatViet Tourism.
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              HCMC, Vietnam
+            </h4>
+            <p>ASP.Net, HTML, CSS, JavaScript, RESTful APIs, & SQL Server</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
