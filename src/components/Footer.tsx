@@ -27,7 +27,7 @@ function Footer() {
         >
           Toni Pham
         </a>{" "}
-        with 💜
+        with ☕
       </p>
     </footer>
   );
