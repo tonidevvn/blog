@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   className="bg-white rounded-3xl font-mono lg:text-base md:text-base transition-all duration-300 px-3 text-indigo-400 font-semibold flex items-center space-x-1"
                   rel="noreferrer"
                 >
-                  <span>Repo</span>
+                  <span>Code</span>
                 </a>
               </div>
               <div className="mr-3">
