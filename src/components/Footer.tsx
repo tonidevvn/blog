@@ -18,12 +18,13 @@ function Footer() {
           <LinkedInIcon />
         </a>
       </div>
-      <p className="mt-4">
+      <p className="mt-4 text-gray-400 ">
         A portfolio designed & built by{" "}
         <a
           href="https://github.com/tonidevvn/blog"
           target="_blank"
           rel="noreferrer"
+          className="text-gray-200 hover:text-gray-300 transition-all duration-300"
         >
           Toni Pham
         </a>{" "}

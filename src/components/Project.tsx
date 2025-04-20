@@ -1,10 +1,89 @@
-import React from "react";
 import mock01 from "../assets/images/mock01.png";
 import mock02 from "../assets/images/mock02.png";
 import mock03 from "../assets/images/mock03.png";
 import mock04 from "../assets/images/mock04.png";
+import mock05 from "../assets/images/mock05.png";
+import mock06 from "../assets/images/mock06.png";
 import "../assets/styles/Project.scss";
-import { Chip } from "@mui/material";
+import ProjectCard from "./Project-Card";
+
+const projects = [
+  {
+    id: 1,
+    title: "Ecommerce Web App",
+    description:
+      "A React.js e-commerce web app with an Ant Design interface, designed for development and prototype testing using readily available fake JSON data",
+    image: mock04,
+    technologies: ["ReactJs", "HTML", "SASS", "Antd"],
+    repoLink: "https://github.com/tonidevvn/ecommerce-antd/",
+    liveLink: "https://ecommerce-antd.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Favorite Movies Collection",
+    description:
+      "This favorite movies collection web app leverages React, TypeScript, and Vite, utilizing a streamlined template for rapid development with HMR and ESLint.",
+    image: mock02,
+    technologies: ["React", "TypeScript", "HTML", "CSS"],
+    repoLink: "https://github.com/tonidevvn/moviesCollection/",
+    liveLink: "https://toni-movies-collection.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Food Price Tracker",
+    description:
+      "Track food prices in real-time across multiple online retailers. Features include advanced search and insightful data analytics.",
+    image: mock03,
+    technologies: [
+      "NextJs",
+      "Java Springboot",
+      "Web Crawling",
+      "CSS",
+      "Selenium",
+      "MySQL",
+    ],
+    repoLink: "https://github.com/tonidevvn/applied-computing-concepts/",
+    liveLink: null,
+  },
+  {
+    id: 4,
+    title: "FileNest",
+    description:
+      "FileNest is a scalable and reliable distributed file storage system using MinIO to efficiently manage large, redundant files with optimized retrieval.",
+    image: mock05,
+    technologies: ["Django", "REST API", "Tailwind", "Amazon S3", "MinIO"],
+    repoLink: "https://github.com/tonidevvn/FileNest/",
+    liveLink: null,
+  },
+  {
+    id: 5,
+    title: "BusRadar - Real-time Bus Tracking",
+    description:
+      "A real-time bus tracking system powered by Java Spring Boot and ReactJS, offering precise arrival predictions and delay forecasts through GPS integration and advanced analytics.",
+    image: mock01,
+    technologies: [
+      "React",
+      "Java Springboot",
+      "CSS",
+      "MongoDB",
+      "Docker",
+      "Web Crawling",
+      "Redis",
+    ],
+    repoLink: "https://github.com/tonidevvn/bus-radar/",
+    liveLink: null,
+  },
+  {
+    id: 6,
+    title: "UWindsor Tours",
+    description:
+      "UWindsor Tours is an interactive 3D WebGL experience where players explore a virtual University of Windsor campus in a fun and engaging way.",
+    image: mock06,
+    technologies: ["Unity", "C#", "Game Development", "Video Game"],
+    repoLink: "https://github.com/tonidevvn/UWindsor_Tours/",
+    liveLink: "https://uwindsor-tours-landing-page-b37u.vercel.app/",
+  },
+];
 
 function Project() {
   return (
@@ -15,218 +94,12 @@ function Project() {
         </h2>
       </header>
       <div className="projects-grid">
-        <div className="project">
-          <div style={{ animationDelay: "0ms" }}>
-            <div className="relative overflow-hidden rounded-lg md:rounded-lg lg:rounded-lg shadow-lg shadow-indigo-200/20 cursor-pointer group">
-              <img
-                src={mock01}
-                alt="project_images"
-                className="object-cover w-full h-[450px] group-hover:scale-110 transition-all duration-500"
-              />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-t from-neutral-900"></div>
-              <div className="absolute bottom-3 left-0 lg:px-6 md:px-6 px-4 py-4 w-full">
-                <h1 className="mb-5 text-3xl lg:text-4xl md:text-4l font-semibold tracking-tight">
-                  BusRadar - Real-time Bus Tracking
-                </h1>
-                <p className="mb-5 text-[13px] leading-normal">
-                  A real-time bus tracking system powered by Java Spring Boot
-                  and ReactJS, offering precise arrival predictions and delay
-                  forecasts through GPS integration and advanced analytics.
-                </p>
-                <div className="">
-                  <div className="flex flex-wrap lg:gap-1 md:gap-3 gap-2 border-b-[0.5px] border-neutral-50/60 pb-3">
-                    <Chip className="chip" label="React" />
-                    <Chip className="chip" label="Java Springboot" />
-                    <Chip className="chip" label="CSS" />
-                    <Chip className="chip" label="MongoDB" />
-                    <Chip className="chip" label="Docker" />
-                    <Chip className="chip" label="Web Crawling" />
-                    <Chip className="chip" label="Redis" />
-                  </div>
-                  <div className="flex flex-gap mt-4">
-                    <div className="mr-3">
-                      <a
-                        href="https://github.com/tonidevvn/bus-radar"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Repo</span>
-                      </a>
-                    </div>
-                    <div className="mr-3">
-                      <button
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        rel="noreferrer"
-                      >
-                        <span>Live</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="project">
-          <div style={{ animationDelay: "0ms" }}>
-            <div className="relative overflow-hidden rounded-lg md:rounded-lg lg:rounded-lg shadow-lg shadow-indigo-200/20 cursor-pointer group">
-              <img
-                src={mock02}
-                alt="project_images"
-                className="object-cover w-full h-[450px] group-hover:scale-110 transition-all duration-500"
-              />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-t from-neutral-900"></div>
-              <div className="absolute bottom-3 left-0 lg:px-6 md:px-6 px-4 py-4 w-full">
-                <h1 className="mb-5 text-3xl lg:text-4xl md:text-4l font-semibold tracking-tight">
-                  Favorite Movies Collection
-                </h1>
-                <p className="mb-5 text-[13px] leading-normal">
-                  A favorite movies collection web app, created with React +
-                  TypeScript + Vite Using template provides a minimal setup to
-                  get React working in Vite with HMR and some ESLint rules.
-                </p>
-                <div className="">
-                  <div className="flex flex-wrap lg:gap-1 md:gap-3 gap-2 border-b-[0.5px] border-neutral-50/60 pb-3">
-                    <Chip className="chip" label="React" />
-                    <Chip className="chip" label="TypeScript" />
-                    <Chip className="chip" label="HTML" />
-                    <Chip className="chip" label="CSS" />
-                  </div>
-                  <div className="flex flex-gap mt-4">
-                    <div className="mr-3">
-                      <a
-                        href="https://github.com/tonidevvn/moviesCollection"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Repo</span>
-                      </a>
-                    </div>
-                    <div className="mr-3">
-                      <a
-                        href="https://toni-movies-collection.vercel.app/"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Live</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="project">
-          <div style={{ animationDelay: "0ms" }}>
-            <div className="relative overflow-hidden rounded-lg md:rounded-lg lg:rounded-lg shadow-lg shadow-indigo-200/20 cursor-pointer group">
-              <img
-                src={mock03}
-                alt="project_images"
-                className="object-cover w-full h-[450px] group-hover:scale-110 transition-all duration-500"
-              />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-t from-neutral-900"></div>
-              <div className="absolute bottom-3 left-0 lg:px-6 md:px-6 px-4 py-4 w-full">
-                <h1 className="mb-5 text-3xl lg:text-4xl md:text-4l font-semibold tracking-tight">
-                  Food Price Tracker
-                </h1>
-                <p className="mb-5 text-[13px] leading-normal">
-                  A web application that tracks food prices across multiple
-                  online stores, featuring real-time data crawling, advanced
-                  search capabilities, and data analytics.
-                </p>
-                <div className="">
-                  <div className="flex flex-wrap lg:gap-1 md:gap-3 gap-2 border-b-[0.5px] border-neutral-50/60 pb-3">
-                    <Chip className="chip" label="NextJs" />
-                    <Chip className="chip" label="Java Springboot" />
-                    <Chip className="chip" label="Web Crawling" />
-                    <Chip className="chip" label="CSS" />
-                    <Chip className="chip" label="Selenium" />
-                    <Chip className="chip" label="MySQL" />
-                  </div>
-                  <div className="flex flex-gap mt-4">
-                    <div className="mr-3">
-                      <a
-                        href="https://github.com/tonidevvn/applied-computing-concepts"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Repo</span>
-                      </a>
-                    </div>
-                    <div className="mr-3">
-                      <button
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        rel="noreferrer"
-                      >
-                        <span>Live</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="project">
-          <div style={{ animationDelay: "0ms" }}>
-            <div className="relative overflow-hidden rounded-lg md:rounded-lg lg:rounded-lg shadow-lg shadow-indigo-200/20 cursor-pointer group">
-              <img
-                src={mock04}
-                alt="project_images"
-                className="object-cover w-full h-[450px] group-hover:scale-110 transition-all duration-500"
-              />
-              <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-t from-neutral-900"></div>
-              <div className="absolute bottom-3 left-0 lg:px-6 md:px-6 px-4 py-4 w-full">
-                <h1 className="mb-5 text-3xl lg:text-4xl md:text-4l font-semibold tracking-tight">
-                  Ecommerce Web App
-                </h1>
-                <p className="mb-5 text-[13px] leading-normal">
-                  An ecommerce web app, created with React.js and Ant Design.
-                  This web app uses dummy/fake JSON data to use as placeholder
-                  in development or in prototype testing.
-                </p>
-                <div className="">
-                  <div className="flex flex-wrap lg:gap-1 md:gap-3 gap-2 border-b-[0.5px] border-neutral-50/60 pb-3">
-                    <Chip className="chip" label="ReactJs" />
-                    <Chip className="chip" label="HTML" />
-                    <Chip className="chip" label="SASS" />
-                    <Chip className="chip" label="Antd" />
-                  </div>
-                  <div className="flex flex-gap mt-4">
-                    <div className="mr-3">
-                      <a
-                        href="https://github.com/tonidevvn/ecommerce-antd"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Repo</span>
-                      </a>
-                    </div>
-                    <div className="mr-3">
-                      <a
-                        href="https://ecommerce-antd.vercel.app/"
-                        className="lg:text-base md:text-base text-[10px] transition-all duration-300 border-2 px-3 py-2 lg:px-4 lg:py-2 md:px-4 md:py-2 hover:bg-indigo-600 text-indigo-300 hover:text-white border-indigo-600 rounded font-semibold flex items-center space-x-1"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>Live</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {projects
+          .slice()
+          .reverse()
+          .map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
       </div>
     </div>
   );

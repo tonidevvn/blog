@@ -23,12 +23,13 @@ const labelsWeb = [
   "Nextjs",
   "JavaScript",
   "Nodejs",
-  "CSS3",
-  "SASS",
   "Django",
+  "Spring Boot",
   "Python",
   "SQL",
   "MongoDB",
+  "CSS3",
+  "SASS",
 ];
 
 const labelsTest = ["JUnit", "Python", "PyTest", "Selenium", "Postman"];
