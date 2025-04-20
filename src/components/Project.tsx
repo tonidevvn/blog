@@ -51,7 +51,14 @@ const projects = [
     description:
       "FileNest is a scalable and reliable distributed file storage system using MinIO to efficiently manage large, redundant files with optimized retrieval.",
     image: mock05,
-    technologies: ["Django", "REST API", "Tailwind", "Amazon S3", "MinIO"],
+    technologies: [
+      "Python",
+      "Django",
+      "REST API",
+      "Tailwind",
+      "Amazon S3",
+      "MinIO",
+    ],
     repoLink: "https://github.com/tonidevvn/FileNest/",
     liveLink: null,
   },
